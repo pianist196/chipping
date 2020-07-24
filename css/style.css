@@ -256,6 +256,30 @@
 .header__svg svg {
   width: 295px;
   height: 297px;
+  -webkit-animation: rotate 15s infinite linear;
+          animation: rotate 15s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .era {
@@ -803,7 +827,7 @@ img {
   }
 
   .header__svg {
-    top: 250px;
+    top: 300px;
   }
 
   .header__svg svg {
@@ -813,10 +837,6 @@ img {
 }
 
 @media (max-width: 850px) {
-  .header__svg {
-    top: 350px;
-  }
-
   .header__svg svg {
     width: 100px;
     height: 100px;
@@ -857,12 +877,6 @@ img {
   .location__btn {
     font-size: 10px;
     padding: 15px 30px;
-  }
-}
-
-@media (max-width: 610px) {
-  .header__svg {
-    top: 420px;
   }
 }
 
